@@ -1,0 +1,45 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    height: 100vh;
+}
+
+.dash-main {
+    background-color: #F3F4F6;
+    box-shadow: rgb(0 0 0 / 10%) 0px 6px 8px inset;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.dash-side {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+}
+.dash-main h1 {
+    margin: 5rem;
+}
+
+.thumb-list {
+    margin-top: 5rem;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+.action-btn-cont {
+    margin: 1rem;
+    top: auto;
+    right: 20px;
+    bottom: 20px;
+    left: auto;
+    position: fixed;
+}
+
+.action-btn {
+    font-family: "DM Sans", sans-serif !important;
+    /*background-color: #6e92b4 !important;*/
+    color: white !important;
+}

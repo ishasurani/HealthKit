@@ -1,0 +1,45 @@
+{
+  "dependencies": {
+    "@date-io/date-fns": "^2.13.1",
+    "@mui/lab": "^5.0.0-alpha.75",
+    "@mui/material": "^5.5.3",
+    "axios": "^0.26.0",
+    "bcrypt": "^3.0.6",
+    "connect-mongo": "^4.6.0",
+    "date-fns": "^2.28.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "jest": "^27.5.1",
+    "mongoose": "^6.2.3",
+    "react-router-dom": "^6.2.2"
+  },
+  "name": "team-project-3-boston-children-s-hospital",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "push-dev": "git push && git push heroku-dev dev:master",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "setup": "npm i && cd client && npm i && cd ..",
+    "build-run": "cd client && npm run build && cd .. && npm start",
+    "dev": "concurrently \"nodemon src/index.js src/**/*.js\" \"cd client && npm run dev\"",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csc301-winter-2022/team-project-3-boston-children-s-hospital.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csc301-winter-2022/team-project-3-boston-children-s-hospital/issues"
+  },
+  "homepage": "https://github.com/csc301-winter-2022/team-project-3-boston-children-s-hospital#readme",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
